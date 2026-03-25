@@ -63,6 +63,15 @@ Every week include:
 - Killercoda work in `labs/killercoda/`
 - Your own repetitions in `labs/personal/`
 
+## Final Week Before Each Exam
+
+Use `exam-fast-track/` only:
+
+- `exam-fast-track/cka-last-week.md`
+- `exam-fast-track/ckad-last-week.md`
+- `exam-fast-track/cks-last-week.md`
+- `exam-fast-track/rapid-revision-checklist.md`
+
 ## Topic Folder Standard
 
 For every new topic, use:

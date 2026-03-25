@@ -9,6 +9,7 @@ If you want the cleanest flow, use this order only:
 5. Start with `01-cka/`
 6. Move to `02-ckad/` only after CKA feels stable
 7. Do `03-cks/` last
+8. In final week before each exam, use [exam-fast-track/README.md](exam-fast-track/README.md)
 
 ## Daily Loop
 
@@ -23,6 +24,12 @@ If you want the cleanest flow, use this order only:
 - Killercoda labs: `labs/killercoda/`
 - Personal practice: `labs/personal/`
 - Mistakes log: `mistakes/`
+
+Entry files:
+
+- Labs guide: [labs/README.md](labs/README.md)
+- Mistakes guide: [mistakes/README.md](mistakes/README.md)
+- Templates guide: [templates/README.md](templates/README.md)
 
 ## Ready Examples
 
