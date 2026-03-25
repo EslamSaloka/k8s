@@ -1,0 +1,17 @@
+# ClusterIP (default)
+apiVersion: v1
+kind: Service
+metadata:
+  name: web
+  namespace: default
+spec:
+  # type: ClusterIP    # default
+  # type: NodePort      # exposes nodePort on every node
+  # type: LoadBalancer  # cloud only
+  selector:
+    app: web
+  ports:
+  - name: http
+    port: 80
+    targetPort: 80
+    # nodePort: 30080  # only for NodePort type

@@ -1,0 +1,51 @@
+{
+  "steps": [
+    "Start with foundation notes and shortcuts",
+    "Finish CKA core path before CKAD",
+    "Move to CKAD application workflows",
+    "Finish CKS hardening and runtime security",
+    "Daily loop: topic + lab + yaml + mistake"
+  ],
+  "groups": [
+    {
+      "name": "Start",
+      "files": [
+        { "label": "Start Here", "path": "START_HERE.md" },
+        { "label": "Study Plan", "path": "STUDY_PLAN.md" },
+        { "label": "Exam Strategy", "path": "EXAM_STRATEGY.md" },
+        { "label": "Foundation Exam Setup", "path": "00-foundation/exam-setup.md" }
+      ]
+    },
+    {
+      "name": "CKA",
+      "files": [
+        { "label": "Kubeadm Lifecycle", "path": "01-cka/06-cluster-maintenance/Kubeadm_Cluster_Lifecycle.md" },
+        { "label": "ETCD Backup Restore", "path": "01-cka/08-etcd/ETCD_Backup_Restore.md" },
+        { "label": "Ingress and Gateway API", "path": "01-cka/04-networking/Ingress_Gateway_API.md" }
+      ]
+    },
+    {
+      "name": "CKAD",
+      "files": [
+        { "label": "CKAD 2025 Updates", "path": "02-ckad/CKAD_2025_Updates.md" }
+      ]
+    },
+    {
+      "name": "CKS",
+      "files": [
+        { "label": "AppArmor and Seccomp", "path": "03-cks/03-minimize-microservice-vulnerabilities/AppArmor_Seccomp.md" },
+        { "label": "Falco and Audit Logs", "path": "03-cks/05-monitoring-logging-runtime-security/Falco_Audit_Logs.md" }
+      ]
+    },
+    {
+      "name": "Practice",
+      "files": [
+        { "label": "CKA Mistakes", "path": "mistakes/cka-mistakes.md" },
+        { "label": "CKAD Mistakes", "path": "mistakes/ckad-mistakes.md" },
+        { "label": "CKS Mistakes", "path": "mistakes/cks-mistakes.md" },
+        { "label": "YAML Patterns", "path": "00-foundation/yaml-patterns.md" },
+        { "label": "kubectl Cheatsheet", "path": "00-foundation/kubectl-cheatsheet.md" }
+      ]
+    }
+  ]
+}

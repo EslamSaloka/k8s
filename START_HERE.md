@@ -1,16 +1,23 @@
 # Start Here
 
-Choose your track:
+If you want the cleanest flow, use this order only:
 
-- CKA core: [CKA/PROFESSIONAL_PATH.md](CKA/PROFESSIONAL_PATH.md)
-- CKS add-on: [CKS/CKS_Path.md](CKS/CKS_Path.md)
-- CKAD add-on: [CKAD/CKAD_Path.md](CKAD/CKAD_Path.md)
+1. Read [00-foundation/kubectl-cheatsheet.md](00-foundation/kubectl-cheatsheet.md)
+2. Read [STUDY_PLAN.md](STUDY_PLAN.md)
+3. Start with `01-cka/`
+4. Move to `02-ckad/` only after CKA feels stable
+5. Do `03-cks/` last
 
-Quick practice:
-- CKA 3-day plan: [CKA/TODO.md](CKA/TODO.md)
-- CKA crash tutorial: [CKA/TUTORIAL.md](CKA/TUTORIAL.md)
+## Daily Loop
 
-Question banks:
-- CKA: [CKA/Question_Bank_Index.md](CKA/Question_Bank_Index.md)
-- CKS: [CKS/CKS_Question_Bank_Index.md](CKS/CKS_Question_Bank_Index.md)
-- CKAD: [CKAD/CKAD_Question_Bank_Index.md](CKAD/CKAD_Question_Bank_Index.md)
+1. Study one topic
+2. Run one lab
+3. Save one YAML
+4. Save one mistake
+
+## Where To Work
+
+- KodeKloud labs: `labs/kodekloud/`
+- Killercoda labs: `labs/killercoda/`
+- Personal practice: `labs/personal/`
+- Mistakes log: `mistakes/`

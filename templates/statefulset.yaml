@@ -1,0 +1,55 @@
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: db
+  namespace: default
+spec:
+  selector:
+    matchLabels:
+      app: db
+  serviceName: db-headless       # REQUIRED — must match a headless Service
+  replicas: 3
+  template:
+    metadata:
+      labels:
+        app: db
+    spec:
+      containers:
+      - name: db
+        image: mysql:8
+        ports:
+        - containerPort: 3306
+        env:
+        - name: MYSQL_ROOT_PASSWORD
+          valueFrom:
+            secretKeyRef:
+              name: db-secret
+              key: password
+        volumeMounts:
+        - name: data
+          mountPath: /var/lib/mysql
+        resources:
+          requests:
+            cpu: "200m"
+            memory: "256Mi"
+  volumeClaimTemplates:
+  - metadata:
+      name: data
+    spec:
+      accessModes: ["ReadWriteOnce"]
+      resources:
+        requests:
+          storage: 1Gi
+---
+# Headless Service — required for stable pod DNS
+apiVersion: v1
+kind: Service
+metadata:
+  name: db-headless
+  namespace: default
+spec:
+  clusterIP: None
+  selector:
+    app: db
+  ports:
+  - port: 3306

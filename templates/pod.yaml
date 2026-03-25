@@ -1,0 +1,43 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: app-pod
+  namespace: default
+  labels:
+    app: app-pod
+spec:
+  containers:
+  - name: app
+    image: nginx:1.25
+    ports:
+    - containerPort: 80
+    resources:
+      requests:
+        cpu: "100m"
+        memory: "128Mi"
+      limits:
+        cpu: "500m"
+        memory: "256Mi"
+    env:
+    - name: APP_MODE
+      value: "prod"
+    readinessProbe:
+      httpGet:
+        path: /
+        port: 80
+      initialDelaySeconds: 5
+      periodSeconds: 10
+    livenessProbe:
+      httpGet:
+        path: /
+        port: 80
+      initialDelaySeconds: 15
+      failureThreshold: 3
+  # Uncomment for node placement:
+  # nodeSelector:
+  #   disk: ssd
+  # tolerations:
+  # - key: "env"
+  #   operator: "Equal"
+  #   value: "prod"
+  #   effect: "NoSchedule"
