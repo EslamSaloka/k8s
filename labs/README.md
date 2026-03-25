@@ -18,3 +18,7 @@ For each lab, save:
 - final verified outcome
 
 If a YAML becomes reusable, move it to `templates/` or topic `examples/`.
+
+Use starter file:
+
+- `labs/lab-log-template.md`

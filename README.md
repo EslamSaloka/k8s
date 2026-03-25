@@ -1,29 +1,25 @@
 # Kubernetes Study Repo
 
-This repository is a focused practical workspace for:
+Practical workspace for:
 
 - CKA
 - CKAD
 - CKS
 
-## Start Here
+## Quick Start
 
 - [START_HERE.md](START_HERE.md)
 - [STUDY_PLAN.md](STUDY_PLAN.md)
-- [EXAM_STRATEGY.md](EXAM_STRATEGY.md)
-- [DAILY_WORKFLOW.md](DAILY_WORKFLOW.md)
+3. [DAILY_WORKFLOW.md](DAILY_WORKFLOW.md)
+4. [EXAM_STRATEGY.md](EXAM_STRATEGY.md)
 
-## Mission
+## Daily Rule
 
-This repository is a personal Kubernetes Study Operating System.
+Each session should produce:
 
-It is optimized for:
-
-- daily execution
-- fast retrieval
-- exam speed
-- hands-on learning
-- low cognitive overload
+1. one topic update (notes or commands)
+2. one practical artifact (lab result or YAML)
+3. one mistake or reinforcement note
 
 ## Structure
 
@@ -36,13 +32,13 @@ It is optimized for:
 - `mistakes/`: repeated errors and fixes by exam track
 - `exam-fast-track/`: final-week revision files per exam
 
-## Folder Entrypoints
+## Where To Save Content
 
-- Foundation: [00-foundation/README.md](00-foundation/README.md)
-- Templates: [templates/README.md](templates/README.md)
-- Mistakes: [mistakes/README.md](mistakes/README.md)
-- Labs: [labs/README.md](labs/README.md)
-- Fast Track: [exam-fast-track/README.md](exam-fast-track/README.md)
+- Repeated commands and patterns: `00-foundation/`
+- Reusable YAML: `templates/`
+- Lab work and experiments: `labs/`
+- Failures and weak areas: `mistakes/`
+- Last-week revision only: `exam-fast-track/`
 
 ## High-Value Paths
 
@@ -52,12 +48,6 @@ It is optimized for:
 - CKAD practical example: `02-ckad/01-pod-design/example-multi-container-pod/`
 - CKS practical example: `03-cks/01-cluster-hardening/example-rbac-security/`
 - Last-week revision: `exam-fast-track/`
-
-## Rule
-
-Use this repo to study faster, practice more, and review cleanly.
-
-Do not over-organize it.
 
 ## Dashboard (Mobile + iPad + Desktop)
 
@@ -77,7 +67,7 @@ Your dashboard URL will be:
 
 `https://<your-github-username>.github.io/<repo-name>/`
 
-### What it shows
+### Features
 
 - Study steps (CKA -> CKAD -> CKS flow)
 - Clickable content map

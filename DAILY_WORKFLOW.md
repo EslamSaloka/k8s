@@ -11,11 +11,17 @@ Use this as your operating routine, not as optional guidance.
 
 Rule: if you did not run it, do not store it.
 
+Placement rule:
+
+- Topic-specific artifacts stay in topic folder
+- Reusable global artifacts move to `templates/` or `00-foundation/`
+
 ## 2) After Each Lab (10-20 min)
 
 1. Save lab result in `labs/kodekloud/` or `labs/killercoda/`.
 2. Record one failure and one fix in `mistakes/<track>-mistakes.md`.
 3. Add one reusable command pattern into `00-foundation/kubectl-cheatsheet.md` only if repeated twice.
+4. Use `labs/lab-log-template.md` for consistent records.
 
 ## 3) Daily Speed Block (20 min)
 
@@ -48,3 +54,11 @@ Rule: if you did not run it, do not store it.
    - troubleshooting flow
    - template speed
 3. Do timed drills and context switching only.
+
+## Session Exit Criteria (Mandatory)
+
+A study session is complete only when all are done:
+
+1. One practical output saved in repo
+2. One failure/fix logged (or one reinforcement if no failure)
+3. One verification command executed and captured

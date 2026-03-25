@@ -1,11 +1,11 @@
 # Start Here
 
-If you want the cleanest flow, use this order only:
+Use this order only:
 
 1. Read [00-foundation/kubectl-cheatsheet.md](00-foundation/kubectl-cheatsheet.md)
 2. Read [STUDY_PLAN.md](STUDY_PLAN.md)
-3. Read [EXAM_STRATEGY.md](EXAM_STRATEGY.md)
-4. Read [DAILY_WORKFLOW.md](DAILY_WORKFLOW.md)
+3. Read [DAILY_WORKFLOW.md](DAILY_WORKFLOW.md)
+4. Read [EXAM_STRATEGY.md](EXAM_STRATEGY.md)
 5. Start with `01-cka/`
 6. Move to `02-ckad/` only after CKA feels stable
 7. Do `03-cks/` last
@@ -18,6 +18,15 @@ If you want the cleanest flow, use this order only:
 3. Save one YAML
 4. Save one mistake
 
+## Exactly Where To Save Things
+
+- Notes from a topic: topic `notes.md`
+- Commands you actually ran: topic `commands.md`
+- Working YAMLs for that topic: topic `examples/`
+- Generic reusable YAMLs: `templates/`
+- Lab records: `labs/` using `labs/lab-log-template.md`
+- Repeated failures: `mistakes/<track>-mistakes.md`
+
 ## Where To Work
 
 - KodeKloud labs: `labs/kodekloud/`
@@ -25,11 +34,11 @@ If you want the cleanest flow, use this order only:
 - Personal practice: `labs/personal/`
 - Mistakes log: `mistakes/`
 
-Entry files:
+Guides:
 
-- Labs guide: [labs/README.md](labs/README.md)
-- Mistakes guide: [mistakes/README.md](mistakes/README.md)
-- Templates guide: [templates/README.md](templates/README.md)
+- [labs/README.md](labs/README.md)
+- [mistakes/README.md](mistakes/README.md)
+- [templates/README.md](templates/README.md)
 
 ## Ready Examples
 
