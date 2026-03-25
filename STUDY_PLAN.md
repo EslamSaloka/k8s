@@ -15,6 +15,8 @@ Each study day:
 3. Save one YAML example
 4. Write one mistake or lesson learned
 
+Reference workflow: [DAILY_WORKFLOW.md](DAILY_WORKFLOW.md)
+
 ## Phase 1: CKA
 
 Study in this order:
@@ -60,3 +62,16 @@ Every week include:
 - KodeKloud work in `labs/kodekloud/`
 - Killercoda work in `labs/killercoda/`
 - Your own repetitions in `labs/personal/`
+
+## Topic Folder Standard
+
+For every new topic, use:
+
+- `notes.md`
+- `commands.md`
+- `troubleshooting.md`
+- `examples/`
+
+Starter template:
+
+- `00-foundation/topic-folder-template/`

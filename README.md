@@ -11,6 +11,7 @@ This repository is a focused practical workspace for:
 - [START_HERE.md](START_HERE.md)
 - [STUDY_PLAN.md](STUDY_PLAN.md)
 - [EXAM_STRATEGY.md](EXAM_STRATEGY.md)
+- [DAILY_WORKFLOW.md](DAILY_WORKFLOW.md)
 
 ## Structure
 
@@ -21,6 +22,14 @@ This repository is a focused practical workspace for:
 - `labs/`: hands-on work from KodeKloud, Killercoda, and personal practice
 - `templates/`: ready YAML templates
 - `mistakes/`: repeated errors and fixes by exam track
+
+## High-Value Paths
+
+- Foundation toolkit: `00-foundation/`
+- Reusable topic template: `00-foundation/topic-folder-template/`
+- CKA practical example: `01-cka/03-storage/example-pv-pvc/`
+- CKAD practical example: `02-ckad/01-pod-design/example-multi-container-pod/`
+- CKS practical example: `03-cks/01-cluster-hardening/example-rbac-security/`
 
 ## Rule
 

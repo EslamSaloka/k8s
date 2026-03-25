@@ -1,0 +1,23 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: mc-log-pod
+  labels:
+    app: mc-log
+spec:
+  containers:
+  - name: writer
+    image: busybox:1.36
+    command: ["sh", "-c", "while true; do date >> /var/log/app/app.log; sleep 3; done"]
+    volumeMounts:
+    - name: shared-logs
+      mountPath: /var/log/app
+  - name: log-sidecar
+    image: busybox:1.36
+    command: ["sh", "-c", "tail -n+1 -f /var/log/app/app.log"]
+    volumeMounts:
+    - name: shared-logs
+      mountPath: /var/log/app
+  volumes:
+  - name: shared-logs
+    emptyDir: {}
